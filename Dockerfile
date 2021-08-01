@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y \
 	hp-ppd \
 	python-cups \
 	cups-backend-bjnp \
+	avahi-utils \
 && rm -rf /var/lib/apt/lists/*
 
 # This will use port 631
