@@ -1,5 +1,5 @@
 # base image
-FROM debian:stable-slim
+FROM ubuntu:hirsute
 
 # label with HEAD commit if given
 ARG GIT_COMMIT=unspecified
