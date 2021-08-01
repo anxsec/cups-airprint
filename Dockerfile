@@ -8,7 +8,7 @@ LABEL git_commit=$GIT_COMMIT
 # Install the packages we need. Avahi will be included
 RUN apt-get update && apt-get install -y \
 	cups \
-	cups-pdf \
+	printer-driver-cups-pdf \
   	cups-bsd \
   	cups-filters \
 	hplip \
@@ -18,7 +18,6 @@ RUN apt-get update && apt-get install -y \
 	openprinting-ppds \
 	hpijs-ppds \
 	hp-ppd \
-	python-cups \
 	cups-backend-bjnp \
 	avahi-utils \
 && rm -rf /var/lib/apt/lists/*
